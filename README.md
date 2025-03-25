@@ -116,3 +116,42 @@ git cherry-pick abc1234
 
 abortar un merge con conflictos en la carpeta local (considerar en que rama se está):
 git merge --abort
+
+
+Con el fin de editar los README.md en la carpeta local y evitar conflictos cuando se quiera subir algo
+
+nano README.md
+git add README.md
+git commit -m "Resuelvo conflicto en README.md"
+git push -u origin main
+
+Comandos De Nano:
+
+Comandos de Edición:
+ * ^X (Ctrl+X): Salir del editor
+ * ^O (Ctrl+O): Guardar archivo
+ * ^S (Ctrl+S): Guardar archivo (alternativo)
+ * ^W (Ctrl+W): Buscar texto
+ * ^\ (Ctrl+\): Buscar y reemplazar
+ * ^K (Ctrl+K): Cortar línea
+ * ^U (Ctrl+U): Pegar línea cortada
+ * ^_ (Ctrl+_): Ir a línea específica
+
+Navegación:
+ * ^Y (Ctrl+Y): Página anterior
+ * ^V (Ctrl+V): Página siguiente
+ * ^A (Ctrl+A): Inicio de línea
+ * ^E (Ctrl+E): Final de línea
+ * Alt+/     : Ir al final del archivo
+ * Alt+\     : Ir al inicio del archivo
+
+Otras Funciones:
+ * ^G (Ctrl+G): Mostrar ayuda
+ * ^C (Ctrl+C): Mostrar posición del cursor
+ * Alt+U     : Deshacer
+ * Alt+E     : Rehacer
+
+Selección y Copiar:
+ * Alt+A     : Comenzar selección
+ * Alt+6     : Copiar texto seleccionado
+ * ^U (Ctrl+U): Pegar texto copiado
