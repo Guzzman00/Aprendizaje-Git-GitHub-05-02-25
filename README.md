@@ -110,6 +110,7 @@ ejemplos de tipos archivos que .gitignore podría afectar en la carpeta local si
 
 ver historial de comandos ejecutados en la carpeta local (considerar en que rama se está):
 git reflog
+
 recuperar commits descartados o eliminados en la carpeta local (considerar en que rama se está):
 git cherry-pick abc1234
 
