@@ -1,0 +1,12 @@
+ThisBuild / version := "0.1.0-SNAPSHOT"
+
+ThisBuild / scalaVersion := "2.13.8"
+
+lazy val root = (project in file("."))
+  .settings(
+    name := "XProyecto_Henry_Pizarro_Scala",
+    libraryDependencies += "org.apache.poi" % "poi-ooxml" % "5.2.2",
+    libraryDependencies += "org.apache.logging.log4j" % "log4j-core" % "2.20.0",
+    libraryDependencies += "org.apache.logging.log4j" % "log4j-api" % "2.20.0",
+    libraryDependencies += "com.sun.mail" % "jakarta.mail" % "2.0.1"
+  )
