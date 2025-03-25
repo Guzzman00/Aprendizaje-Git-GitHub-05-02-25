@@ -35,6 +35,43 @@ cambiar de la rama main a la master en la carpeta local:
 git checkout master
 
 seleccionar todos los archivos de la carpeta local:
+Comandos Git Bash
+
+copiar:ctrl+insert
+
+pegar:shift+insert
+
+buscar una carpeta local:
+cd "C:\Users\guzzm\Desktop\Aprendizaje Git y GitHub"
+
+confirmar en que carpeta local se está:
+pwd
+
+ver que archivos hay dentro de la carpeta local:
+ls
+
+crear la rama master en la carpeta local:
+git init
+
+descargar referencias de cambios desde el del repositorio remoto (origin) sin modificar la carpeta local:
+git fetch origin
+
+crear la rama main en la carpeta local y crear todos los puentes desde la carpeta local con el repositorio remoto (origin):
+git checkout -b main origin/main
+
+ver en que rama se está en la carpeta local:
+git branch
+
+ver todas las ramas existentes en la carpeta local y ver todos los puentes existentes creados desde la carpeta local con el repositorio remoto (origin):
+git branch -a
+
+cambiar de la rama master a la main en la carpeta local:
+git checkout main
+
+cambiar de la rama main a la master en la carpeta local:
+git checkout master
+
+seleccionar todos los archivos de la carpeta local:
 git add .
 
 deshacer cambios antes del comando commit de la carpeta local (considerar en que rama se está):
@@ -118,14 +155,23 @@ abortar un merge con conflictos en la carpeta local (considerar en que rama se e
 git merge --abort
 
 
-Con el fin de editar los README.md en la carpeta local y evitar conflictos cuando se quiera subir algo
+Con el fin de editar los README.md en la carpeta local y evitar conflictos cuando se quiera subir algo ya que debe haber total simetría entre el repositorio remoto (origin) y la carpeta local
 
 nano README.md
+(Ctrl+A)
+(Alt+A)
+(Ctrl+V) (varias veces)
+(Ctrl+K)
+Shift+Insert
+(Ctrl+O)
+Enter
+(Ctrl+X)
 git add README.md
 git commit -m "Resuelvo conflicto en README.md"
 git push -u origin main
 
-Comandos De Nano:
+
+Comandos de Nano 7.2:
 
 Comandos de Edición:
  * ^X (Ctrl+X): Salir del editor
