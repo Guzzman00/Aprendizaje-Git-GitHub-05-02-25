@@ -66,7 +66,7 @@ git status
 ver el historial de commits en la carpeta local (considerar en que rama se está):
 git log
 
-clonar un repositorio remoto a la carpeta local:
+clonar un repositorio remoto a la carpeta local (considerar en que rama se está) y crear una carpeta local de la clonación con todo su contenido:
 git clone https://github.com/Guzzman00/Aprendizaje-Git-GitHub-05-02-25.git
 
 traer y aplicar cambios desde el repositorio remoto (origin) a la carpeta local en la rama master:
