@@ -5,8 +5,24 @@ ThisBuild / scalaVersion := "2.13.8"
 lazy val root = (project in file("."))
   .settings(
     name := "XProyecto_Henry_Pizarro_Scala",
+    libraryDependencies += "org.apache.poi" % "poi" % "5.2.2",
     libraryDependencies += "org.apache.poi" % "poi-ooxml" % "5.2.2",
+    libraryDependencies += "org.apache.xmlbeans" % "xmlbeans" % "5.0.3",
     libraryDependencies += "org.apache.logging.log4j" % "log4j-core" % "2.20.0",
     libraryDependencies += "org.apache.logging.log4j" % "log4j-api" % "2.20.0",
-    libraryDependencies += "com.sun.mail" % "jakarta.mail" % "2.0.1"
-  )
+    libraryDependencies += "com.sun.mail" % "jakarta.mail" % "2.0.1",
+    libraryDependencies += "org.mongodb.scala" %% "mongo-scala-driver" % "5.4.0"
+
+)
+
+Compile / mainClass := Some("ToyGUIScannamar")
+
+assembly / assemblyMergeStrategy := {
+    case PathList("META-INF", "services", xs @ _*) => MergeStrategy.concat
+
+    case PathList("META-INF", xs @ _*) => MergeStrategy.discard
+
+    case "application.conf" | "reference.conf" => MergeStrategy.concat
+
+    case x => MergeStrategy.first
+}
