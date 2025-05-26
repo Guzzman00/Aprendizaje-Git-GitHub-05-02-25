@@ -13,7 +13,7 @@ object toy_scannamar {
   //var materialesRetirados: List[Material] = List() -> código vestigial en Scannamar
 
   // Ruta al archivo Excel
-  val rutaExcel: String = "C:\\Users\\guzzm\\Desktop\\XProyecto_Henry_Pizarro_Scala\\src\\main\\resources\\toy_excel_scannamar.xlsx"
+  val rutaExcel: String = "src\\main\\resources\\toy_excel_scannamar.xlsx"
 
   // Definición de las clases de datos
   case class Animal(
